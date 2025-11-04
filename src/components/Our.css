@@ -108,6 +108,10 @@
   justify-content: center;
 }
 
+.bannerCard1 p {
+  margin: 0;
+}
+
 .BannerTitle {
   color: rgba(255, 255, 255, 1);
   font-family: "Inter";
@@ -124,6 +128,7 @@
   font-weight: 600;
   background-color: rgba(240, 248, 255, 0);
   text-align: center;
+  margin: 0px !important;
 }
 
 /* footer section*/
@@ -228,7 +233,7 @@
 }
 
 #Ticker-container-pro {
-  width: 70%;
+  width: 75%;
 }
 
 #ticket-header {
@@ -253,6 +258,31 @@
   border-radius: 8px;
   padding: 16px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.greenCard {
+  transition: all ease 0.3s;
+}
+
+.yellowCard {
+  transition: all ease 0.3s;
+}
+
+.greenCard:hover {
+  background-color: rgb(234, 255, 243);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.yellowCard:hover {
+  background-color: rgb(254, 255, 234);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
@@ -333,6 +363,44 @@
   justify-content: space-between;
 }
 
+.yellowish {
+  background-color: rgba(248, 243, 185, 1);
+  color: rgba(156, 119, 0, 1);
+}
+
+.greenish {
+  background-color: rgba(185, 248, 207, 1);
+  color: rgba(11, 94, 6, 1);
+}
+
+.yellowish1 {
+  color: rgba(254, 187, 12, 1) !important;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(254, 187, 12, 1);
+  border-radius: 50%;
+}
+
+.greenish1 {
+  color: rgba(2, 165, 59, 1) !important;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(2, 165, 59, 1);
+  border-radius: 50%;
+}
+
+.yellowish2 {
+  color: rgba(254, 187, 12, 1);
+}
+
+.greenish2 {
+  color: rgba(2, 165, 59, 1);
+}
+
+.redish {
+  color: rgba(248, 48, 68, 1);
+}
+
 /*  Task container */
 
 .task-header {
@@ -361,4 +429,106 @@
   font-family: "Inter";
   font-size: 16px;
   font-weight: 400;
+}
+
+.pending-list {
+  box-sizing: border-box;
+}
+
+.pending-list > div {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.pending-list > div:hover {
+  background-color: rgb(234, 255, 243);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pending-list div h2 {
+  color: rgba(0, 25, 49, 1);
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.pending-list button {
+  background-color: rgba(2, 165, 59, 1);
+  color: white;
+  border: 0px;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+#Taskcompletion {
+  width: 25%;
+}
+
+.solved-list > div {
+  width: 100%;
+  border: 2px solid rgb(85, 255, 85, 0.5);
+  border-radius: 8px;
+  background-color: rgb(248, 255, 249);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.solved-list > div:hover {
+  background-color: rgb(234, 255, 243);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.solved-list div h3 {
+  font-size: 18px;
+  font-family: "Inter";
+  font-weight: 600;
+  color: black;
+  margin: 0px 0px 10px 0px;
+}
+
+.solved-list div p {
+  font-size: 16px;
+  color: green;
+  margin: 0px;
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+.solved-list div div {
+  display: flex;
+  align-items: center;
+}
+
+.solved-list div img {
+  width: 16px;
+  height: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.pending-list button {
+  transition: all ease 0.3s;
+}
+
+.pending-list button:hover {
+  background-color: rgb(0, 135, 77);
 }

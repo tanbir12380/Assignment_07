@@ -1,76 +1,35 @@
 import React from "react";
+import SubTic from "./SubTicket";
 
-const Ticket = () => {
+const Ticket = ({
+  allData,
+  setAllData,
+  pending,
+  setpending,
+  pCount,
+  setPcount,
+}) => {
   return (
     <div id="Ticker-container-pro">
       <h2 id="ticket-header">Customer Tickets</h2>
 
       <div className="Tickets">
-        <div className="card">
-          <div className="card-header">
-            <h3>Login Issues - Can't Access Account</h3>
-            <div className="card-badge">
-              <img src="Ellipse.png" alt="" />
-              Open
-            </div>
-          </div>
-          <p className="description">
-            Customer is unable to log in to their account. They've tried
-            resetting their password multiple times but still...
-          </p>
-          <div className="card-footer">
-            <span className="ticket-id">#1001</span>
-            <span className="priority">HIGH PRIORITY</span>
-            <span className="name">John Smith</span>
-            <span className="date">
-              <img src="cale.png" alt="" /> 1/4/2024
-            </span>
-          </div>
-        </div>
+        {/* card start */}
 
-        <div className="card">
-          <div className="card-header">
-            <h3>Login Issues - Can't Access Account</h3>
-            <div className="card-badge">
-              <img src="Ellipse.png" alt="" />
-              Open
-            </div>
-          </div>
-          <p className="description">
-            Customer is unable to log in to their account. They've tried
-            resetting their password multiple times but still...
-          </p>
-          <div className="card-footer">
-            <span className="ticket-id">#1001</span>
-            <span className="priority">HIGH PRIORITY</span>
-            <span className="name">John Smith</span>
-            <span className="date">
-              <img src="cale.png" alt="" /> 1/4/2024
-            </span>
-          </div>
-        </div>
+        {allData.map((data, index) => (
+          <SubTic
+            key={index}
+            allDatas={allData}
+            allData={data}
+            setAllData={setAllData}
+            pCount={pCount}
+            setPcount={setPcount}
+            pending={pending}
+            setpending={setpending}
+          ></SubTic>
+        ))}
 
-        <div className="card">
-          <div className="card-header">
-            <h3>Login Issues - Can't Access Account</h3>
-            <div className="card-badge">
-              <img src="Ellipse.png" alt="" />
-              Open
-            </div>
-          </div>
-          <p className="description">
-            Customer is unable to log in to their account. They've tried
-            resetting their password multiple times but still...
-          </p>
-          <div className="card-footer">
-            <span className="ticket-id">#1001</span>
-            <span className="priority">HIGH PRIORITY</span>
-            <span className="name">John Smith</span>
-            <span className="date">
-              <img src="cale.png" alt="" /> 1/4/2024
-            </span>
-          </div>
-        </div>
+        {/* card end */}
       </div>
     </div>
   );
