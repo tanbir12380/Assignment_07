@@ -1,0 +1,219 @@
+/* Nav Section */
+
+#Navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 0px 80px;
+  background-color: rgb(255, 255, 255);
+}
+
+#Navbar div {
+  background-color: rgb(255, 255, 255);
+}
+
+#Navbar h1 {
+  color: rgba(19, 11, 45, 1);
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  background-color: rgb(255, 255, 255);
+}
+
+#Navbar ul {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  list-style-type: none;
+}
+
+#Navbar li {
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px 16px;
+  background-color: rgb(255, 255, 255);
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+#button-container li {
+  margin-right: 0px;
+  margin-left: 32px;
+}
+
+#Navbar button {
+  /* width: 145px; */
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 12px 16px 12px 16px;
+  border-radius: 4px;
+  background: linear-gradient(
+    125deg,
+    rgba(99, 46, 227, 1),
+    rgba(159, 98, 242, 1)
+  );
+  color: white;
+  border: 0px;
+}
+
+/* Banner Section */
+
+#Banner {
+  width: calc(100% - 160px);
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto;
+}
+
+.BannerCard {
+  width: 49%;
+  height: 250px;
+
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(99, 46, 227, 1),
+    rgba(159, 98, 242, 1)
+  );
+}
+
+.second_card {
+  background: linear-gradient(
+    90deg,
+    rgba(84, 207, 103.7, 1),
+    rgba(0, 130, 122.2, 1)
+  );
+}
+
+.BannerCard1 {
+  width: 100%;
+  height: 100%;
+  background: url("vector1.png"), url("vector3.png");
+  background-position: left bottom, right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.BannerTitle {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 400;
+  background-color: rgba(240, 248, 255, 0);
+  text-align: center;
+}
+
+.BannerCount {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter";
+  font-size: 60px;
+  font-weight: 600;
+  background-color: rgba(240, 248, 255, 0);
+  text-align: center;
+}
+
+/* footer section*/
+
+.footer {
+  background-color: black;
+  display: block;
+  padding-top: 1px;
+
+  height: auto;
+}
+
+.footer-container {
+  display: flex;
+  width: calc(100% - 160px);
+  justify-content: space-between;
+  background-color: rgba(240, 248, 255, 0);
+  margin: 80px auto 0px auto;
+  align-items: flex-start;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(164, 164, 164, 0.479);
+}
+
+.footer h2,
+.footer h3,
+.footer p,
+.footer ul,
+.footer ul li,
+.footer ul li a {
+  color: rgba(161, 161, 170, 1);
+}
+
+.about {
+  width: 350px;
+}
+
+.about h2 {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.about p {
+  color: rgba(161, 161, 170, 1);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-column h3 {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer-column ul li {
+  color: rgba(161, 161, 170, 1);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 16px 0px;
+}
+
+.footer-bottom {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom h3 {
+  color: rgba(250, 250, 250, 1);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid rgb(189, 189, 189);
+}
