@@ -64,19 +64,19 @@ const Footer = () => {
           <ul>
             <li>
               {" "}
-              <img src="twitter.png" alt="" /> @CS — Ticket System
+              <img src="/twitter.png" alt="" /> @CS — Ticket System
             </li>
             <li>
               {" "}
-              <img src="social.png" alt="" /> @CS — Ticket System
+              <img src="/social.png" alt="" /> @CS — Ticket System
             </li>
             <li>
               {" "}
-              <img src="facebook.png" alt="" /> @CS — Ticket System
+              <img src="/facebook.png" alt="" /> @CS — Ticket System
             </li>
             <li>
               {" "}
-              <img src="email.png" alt="" /> support@cst.com
+              <img src="/email.png" alt="" /> support@cst.com
             </li>
           </ul>
         </div>

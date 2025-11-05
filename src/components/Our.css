@@ -570,6 +570,18 @@ button {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.social ul li {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.card-header {
+  gap: 10px;
+}
+
 /* Responsive css */
 
 @media (max-width: 768px) {
@@ -601,6 +613,7 @@ button {
 
   .footer-container {
     flex-direction: column;
+    width: calc(100% - 80px);
   }
 
   .about {
