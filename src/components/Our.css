@@ -277,18 +277,6 @@
   transition: all ease 0.3s;
 }
 
-.greenCard:hover {
-  background-color: rgb(234, 255, 243);
-  transform: translateY(-3px) scale(1.01);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.yellowCard:hover {
-  background-color: rgb(254, 255, 234);
-  transform: translateY(-3px) scale(1.01);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 .card-header {
   display: flex;
   align-items: center;
@@ -453,12 +441,6 @@
   cursor: pointer;
 }
 
-.pending-list > div:hover {
-  background-color: rgb(234, 255, 243);
-  transform: translateY(-3px) scale(1.01);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 .pending-list div h2 {
   color: rgba(0, 25, 49, 1);
   font-family: "Inter";
@@ -525,10 +507,6 @@ button {
   transition: all ease 0.3s;
 }
 
-.pending-list button:hover {
-  background-color: rgb(0, 135, 77);
-}
-
 .shifter {
   display: none;
 }
@@ -544,7 +522,6 @@ button {
   border-radius: 8px;
   color: #ffffff;
   cursor: pointer;
-  transition: all 2s ease;
   background: linear-gradient(
     90deg,
     rgba(99, 46, 227, 1),
@@ -552,22 +529,8 @@ button {
   );
 }
 
-.shifter button:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(84, 207, 103.7, 1),
-    rgba(0, 130, 122.2, 1)
-  );
-}
-
 .redishCard {
   transition: all ease 0.3s;
-}
-
-.redishCard:hover {
-  background-color: rgb(255, 234, 234);
-  transform: translateY(-3px) scale(1.01);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .social ul li {
@@ -583,6 +546,36 @@ button {
 }
 
 /* Responsive css */
+
+@media (min-width: 768px) {
+  .greenCard:hover {
+    background-color: rgb(234, 255, 243);
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .yellowCard:hover {
+    background-color: rgb(254, 255, 234);
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .pending-list > div:hover {
+    background-color: rgb(234, 255, 243);
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .pending-list button:hover {
+    background-color: rgb(0, 135, 77);
+  }
+
+  .redishCard:hover {
+    background-color: rgb(255, 234, 234);
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
 
 @media (max-width: 768px) {
   #Navbar {
