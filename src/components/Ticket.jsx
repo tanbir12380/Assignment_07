@@ -8,9 +8,10 @@ const Ticket = ({
   setpending,
   pCount,
   setPcount,
+  class11
 }) => {
   return (
-    <div id="Ticker-container-pro">
+    <div id="Ticker-container-pro" className={class11}>
       <h2 id="ticket-header">Customer Tickets</h2>
 
       <div className="Tickets">

@@ -3,7 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Mainbody from "./components/Mainbody";
 import Nav from "./components/Nav";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [allData, setAllData] = useState([]);

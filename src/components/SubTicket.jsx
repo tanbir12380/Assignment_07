@@ -1,4 +1,3 @@
-import React from "react";
 import "./Our.css";
 import { toast } from "react-toastify";
 
@@ -24,7 +23,7 @@ const SubTic = ({
           setPcount
         );
       }}
-      className={"card " + classDecider3(allData.status)}
+      className={"card " + classDecider3(allData.priority)}
     >
       <div className="card-header">
         <h3>{allData.title}</h3>
@@ -82,10 +81,12 @@ function classDecider2(classname) {
 }
 
 function classDecider3(classname) {
-  if (classname === "Open") {
+  if (classname === "LOW PRIORITY") {
     return "greenCard";
-  } else if (classname === "In-Progress") {
+  } else if (classname === "MEDIUM PRIORITY") {
     return "yellowCard";
+  } else {
+    return "redishCard";
   }
 }
 
@@ -98,9 +99,13 @@ function addTicketToTask(
   pCount,
   setPcount
 ) {
-  pending.push(allData);
-  setpending([...pending]);
-  pCount += 1;
-  setPcount(pCount);
-  toast("Ticket is added");
+  if (pending.includes(allData) === false) {
+    pending.push(allData);
+    setpending([...pending]);
+    pCount += 1;
+    setPcount(pCount);
+    toast("Ticket is in progress");
+  } else {
+    toast("This ticket is already added in progress");
+  }
 }

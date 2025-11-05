@@ -1,6 +1,6 @@
 import React from "react";
 import "./Our.css";
-const Banner = ({ pCount, setPcount, rCount, setRcount }) => {
+const Banner = ({ pCount, rCount }) => {
   return (
     <div id="Banner">
       <div className="BannerCard ">

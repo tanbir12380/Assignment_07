@@ -1,22 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "./Banner";
 import Ticket from "./Ticket";
 import "./Our.css";
 import TaskStatus from "./TaskStatus";
-
-{
-  /*     
-          pending={pending}
-          setpending={setpending}
-          resolved={resolved}
-          setresolved={setresolved}
-          allData={allData}
-          setAllData={setAllData}
-          pCount={pCount}
-          setPcount={setPcount}
-          rCount={rCount}
-          setRcount={setRcount} */
-}
 
 const Mainbody = ({
   allData,
@@ -30,6 +16,8 @@ const Mainbody = ({
   rCount,
   setRcount,
 }) => {
+  const [show, setshow] = useState(true);
+
   return (
     <>
       <Banner
@@ -38,8 +26,25 @@ const Mainbody = ({
         rCount={rCount}
         setRcount={setRcount}
       ></Banner>
+      <div className="shifter">
+        <button
+          onClick={() => {
+            setshow(true);
+          }}
+        >
+          Tickets
+        </button>
+        <button
+          onClick={() => {
+            setshow(false);
+          }}
+        >
+          Tasks
+        </button>
+      </div>
       <div id="middle-container">
         <Ticket
+          class11={show === true ? "" : "hide-contain"}
           pCount={pCount}
           setPcount={setPcount}
           pending={pending}
@@ -48,6 +53,7 @@ const Mainbody = ({
           allData={allData}
         ></Ticket>
         <TaskStatus
+          class11={show === true ? "hide-contain" : ""}
           pCount={pCount}
           setPcount={setPcount}
           rCount={rCount}

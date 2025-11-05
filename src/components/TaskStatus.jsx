@@ -12,9 +12,10 @@ const TaskStatus = ({
   setRcount,
   allData,
   setAllData,
+  class11,
 }) => {
   return (
-    <div id="Taskcompletion">
+    <div id="Taskcompletion" className={class11}>
       <div className="status-holder">
         <h2 className="task-header">Task Status</h2>
 
@@ -59,10 +60,6 @@ const TaskStatus = ({
             {resolved.map((data, index) => (
               <div key={index}>
                 <h3>{data.title}</h3>
-                <div>
-                  <img src="check.png" alt="" />
-                  <p>Completed</p>
-                </div>
               </div>
             ))}
           </div>
@@ -102,5 +99,5 @@ function completeTask(
   const rem1Data = pending.filter((Sdata) => Sdata.id !== data.id);
   setpending(rem1Data);
 
-  toast("Ticket is completed");
+  toast("Completed");
 }

@@ -103,7 +103,7 @@
     "title": "Coupon Code Not Working",
     "description": "Customer applied a valid coupon but the discount was not reflected at checkout.",
     "customer": "Charlotte White",
-    "priority": "LOW HIGH PRIORITY",
+    "priority": "HIGH PRIORITY",
     "status": "Open",
     "createdAt": "2024-01-26"
   },
